@@ -1,0 +1,21 @@
+
+{
+  "doctors_specialties": [
+    {"doctor": "Dr. Robert Krinsky, MD", "specialty": "Primary Care, Nephrology (Kidney)"},
+    {"doctor": "Dr. Donzella Dixon, MD", "specialty": "Primary Care"},
+    {"doctor": "Marina Weinstein, PA, PA-C", "specialty": "Primary Care"},
+    {"doctor": "Nathalie Monfiston, FNP", "specialty": "Primary Care"},
+    {"doctor": "Dr. Charles Francis, DO", "specialty": "Primary Care, Family Practice"},
+    {"doctor": "Dr. Steven Weissman, MD", "specialty": "Dermatology (Skin)"},
+    {"doctor": "Gail Weissman, PA", "specialty": "Dermatology (Skin)"},
+    {"doctor": "Rachel Weissman, PA", "specialty": "Dermatology (Skin)"},
+    {"doctor": "Dr. Yelena Bataykin, MD", "specialty": "Pediatrics"},
+    {"doctor": "Dr. Patrick Sciortino, MD", "specialty": "Ophthalmology (Eye)"},
+    {"doctor": "Dr. David Stewart, DPM", "specialty": "Podiatry (feet)"},
+    {"doctor": "Dr. Aaron Grotas, MD", "specialty": "Urology"},
+    {"doctor": "Dr. Cary Pollack, MD", "specialty": "Cardiology (Heart)"},
+    {"doctor": "Dr. Eric Berkowits, MD", "specialty": "Vascular (Veins)"},
+    {"doctor": "Debranaye Rose, MSN", "specialty": "Dermatology (Skin)"},
+    {"doctor": "Dr. Ian Wall, DO", "specialty": "Gastroenterology"}
+  ]
+}
