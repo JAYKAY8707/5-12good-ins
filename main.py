@@ -1138,8 +1138,15 @@ def management():
     doctors = [d.name for d in Doctor.query.all()]
     insurances = [i.name for i in Insurance.query.all()]
     specialties = [s.name for s in Specialty.query.all()]
-    relationships = [(d.doctor.name, d.insurance.name) for d in DoctorInsurance.query.all()]
-    specialty_relationships = [(ds.doctor.name, ds.specialty.name) for ds in DoctorSpecialty.query.all()]
+    relationships = []
+    for d in DoctorInsurance.query.all():
+        if d.doctor and d.insurance:
+            relationships.append((d.doctor.name, d.insurance.name))
+            
+    specialty_relationships = []
+    for ds in DoctorSpecialty.query.all():
+        if ds.doctor and ds.specialty:
+            specialty_relationships.append((ds.doctor.name, ds.specialty.name))
 
     return render_template_string(management_template, doctors=doctors, insurances=insurances, relationships=relationships, specialties=specialties, specialty_relationships=specialty_relationships)
 
