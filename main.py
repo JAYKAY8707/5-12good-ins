@@ -4,9 +4,15 @@ from functools import wraps
 from datetime import timedelta, datetime
 from flask import jsonify
 
+import os
+
 app = Flask(__name__)
 app.secret_key = 'FMC8707$-secret-key-789'  # Required for sessions
 app.permanent_session_lifetime = timedelta(seconds=60)  # Session timeout after 60 seconds
+
+# Create instance directory if it doesn't exist
+os.makedirs('instance', exist_ok=True)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///medical.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
